@@ -36,7 +36,9 @@ export default {
   // 跳转路由
   methods: {
     itemClick(){
+    if(this.$route.path!==this.path){
       this.$router.replace(this.path)
+      }
     }
   }
 }
